@@ -1,5 +1,5 @@
 /**
- * AURA & CERA - ATELIER BOTÁNICO
+ * Nalu Candle - ATELIER BOTÁNICO
  * Script principal: Catálogo interactivo, Diseñador en Vivo de Velas, Carrito & WhatsApp
  */
 
