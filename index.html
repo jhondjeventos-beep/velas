@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura & Cera | Velas Artesanales y Personalizadas</title>
+  <meta name="description" content="Velas artesanales 100% de cera de soja con aromas cautivadores, formas escultóricas y personalización única de etiquetas y empaques.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕯️</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <span>✨ <strong>100% Cera de Soja Natural</strong> · Mechas de madera y algodón orgánico · Envíos seguros a todo el país</span>
+      <a href="#personalizador" class="announcement-link">Personaliza la tuya hoy <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="flame-icon">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">AURA & CERA</span>
+          <span class="brand-sub">ATELIER BOTÁNICO</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navMenu">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#catalogo" class="nav-link">Catálogo</a>
+        <a href="#personalizador" class="nav-link highlight-link">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Diseña tu Vela
+        </a>
+        <a href="#aromas" class="nav-link">Aromaterapia</a>
+        <a href="#empaques" class="nav-link">Empaques</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-btn-icon" id="searchToggle" title="Buscar aromas o modelos" aria-label="Buscar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="nav-btn-cart" id="cartToggle" title="Ver carrito" aria-label="Carrito de compras">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick Search Bar (Overlay) -->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="container search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Escribe un aroma (Vainilla, Lavanda...), forma (Bubble, Loto...) o motivo...">
+        <button class="close-search" id="closeSearch"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-tag">
+          <i class="fa-solid fa-sparkles"></i> Velas de Autor & Experiencias Sensoriales
+        </span>
+        <h1 class="hero-title">
+          Ilumina tus momentos con <span class="gradient-text">aromas inolvidables</span> y diseño único.
+        </h1>
+        <p class="hero-description">
+          Creamos velas botánicas con cera de soja pura y vertidas a mano. Personaliza el aroma, la forma escultórica, la etiqueta con tu nombre o dedicatoria, y un empaque de regalo listo para enamorar.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#personalizador" class="btn btn-primary">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Personalizar mi Vela
+          </a>
+          <a href="#catalogo" class="btn btn-secondary">
+            <i class="fa-solid fa-eye"></i> Ver Colección 2026
+          </a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="badge-item">
+            <i class="fa-solid fa-leaf"></i>
+            <div>
+              <strong>100% Ecológica</strong>
+              <span>Cera vegetal no tóxica</span>
+            </div>
+          </div>
+          <div class="badge-item">
+            <i class="fa-solid fa-heart"></i>
+            <div>
+              <strong>Hecha a Mano</strong>
+              <span>Artesanía con detalle</span>
+            </div>
+          </div>
+          <div class="badge-item">
+            <i class="fa-solid fa-gift"></i>
+            <div>
+              <strong>Empaque de Lujo</strong>
+              <span>Listo para regalar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase -->
+      <div class="hero-visual">
+        <div class="hero-card-glow">
+          <div class="candle-floating-container">
+            <div class="candle-showcase-badge">
+              <span class="pulse-dot"></span> Más Deseada
+            </div>
+            
+            <img src="https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&w=800&q=80" 
+                 alt="Vela artesanal en vaso ámbar con flores secas" 
+                 class="hero-candle-img">
+            
+            <div class="candle-scent-floating-tag">
+              <i class="fa-solid fa-seedling"></i>
+              <div>
+                <strong>Aura Ambarina</strong>
+                <span>Vainilla Bourbon & Higo Dulce</span>
+              </div>
+            </div>
+
+            <div class="candle-custom-preview-tag">
+              <i class="fa-solid fa-feather"></i>
+              <span>Etiqueta: "Para mamá con amor"</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Candle Customizer (El Corazón de la Página) -->
+  <section class="customizer-section" id="personalizador">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Estudio de Creación en Vivo</span>
+        <h2 class="section-title">Diseña Tu Vela 100% Personalizada</h2>
+        <p class="section-desc">
+          Elige la silueta, tu esencia favorita, personaliza la etiqueta con tu nombre o mensaje especial y selecciona el empaque perfecto. ¡Mira el resultado en tiempo real!
+        </p>
+      </div>
+
+      <div class="customizer-grid">
+        <!-- Live Preview Stage (Left Side) -->
+        <div class="preview-column">
+          <div class="customizer-preview-box">
+            <div class="preview-glow" id="previewGlow"></div>
+            
+            <div class="interactive-candle-display">
+              <!-- Flame Simulation -->
+              <div class="simulated-flame">
+                <div class="flame-core"></div>
+                <div class="flame-glow"></div>
+              </div>
+
+              <!-- Candle Vessel / Shape Visual Representation -->
+              <div class="candle-vessel-wrap" id="candleVesselWrap">
+                <img id="customizerImage" 
+                     src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=700&q=80" 
+                     alt="Visualización de vela" 
+                     class="customizer-img">
+                
+                <!-- Personalized Label Overlay -->
+                <div class="candle-custom-label-overlay" id="labelOverlay">
+                  <span class="label-brand">AURA & CERA</span>
+                  <h4 class="label-name" id="previewLabelName">Tu Nombre o Frase</h4>
+                  <p class="label-scent" id="previewLabelScent">Vainilla & Caramelo Salado</p>
+                  <span class="label-footer">100% SOY WAX · HANDCRAFTED</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dynamic Specs Summary -->
+            <div class="preview-specs-card">
+              <div class="spec-row">
+                <span>Forma:</span>
+                <strong id="specShape">Vaso de Vidrio Ámbar 250g</strong>
+              </div>
+              <div class="spec-row">
+                <span>Aroma:</span>
+                <strong id="specScent">Vainilla Bourbon & Caramelo</strong>
+              </div>
+              <div class="spec-row">
+                <span>Empaque:</span>
+                <strong id="specPackaging">Caja Kraft de Lujo con Lacre</strong>
+              </div>
+              <div class="spec-price-row">
+                <span>Precio Estimado:</span>
+                <div class="price-amount" id="customizerTotalPrice">$48.000 COP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls Form (Right Side) -->
+        <div class="controls-column">
+          <div class="steps-card">
+
+            <!-- Step 1: Shape / Vessel -->
+            <div class="step-group">
+              <div class="step-title">
+                <span class="step-number">1</span>
+                <div>
+                  <h3>Elige la Forma & Recipiente</h3>
+                  <small>Selecciona el estilo que mejor encaje en tu espacio</small>
+                </div>
+              </div>
+              <div class="options-grid" id="shapeOptions">
+                <button type="button" class="option-btn active" data-shape="ambar" data-price="48000" data-img="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=700&q=80">
+                  <div class="opt-icon"><i class="fa-solid fa-wine-glass"></i></div>
+                  <div class="opt-info">
+                    <strong>Vaso Ámbar Vintage</strong>
+                    <span>250g · Cálido & Duradero</span>
+                  </div>
+                  <span class="opt-tag">Clásico</span>
+                </button>
+
+                <button type="button" class="option-btn" data-shape="ceramica" data-price="55000" data-img="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=700&q=80">
+                  <div class="opt-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                  <div class="opt-info">
+                    <strong>Cerámica Rústica Beige</strong>
+                    <span>300g · Doble mecha</span>
+                  </div>
+                  <span class="opt-tag">Elegante</span>
+                </button>
+
+                <button type="button" class="option-btn" data-shape="bubble" data-price="38000" data-img="https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=700&q=80">
+                  <div class="opt-icon"><i class="fa-solid fa-cubes"></i></div>
+                  <div class="opt-info">
+                    <strong>Escultura Bubble Cube</strong>
+                    <span>160g · Escandinava Moderna</span>
+                  </div>
+                  <span class="opt-tag">Tendencia</span>
+                </button>
+
+                <button type="button" class="option-btn" data-shape="loto" data-price="42000" data-img="https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?auto=format&fit=crop&w=700&q=80">
+                  <div class="opt-icon"><i class="fa-solid fa-spa"></i></div>
+                  <div class="opt-info">
+                    <strong>Flor de Loto Tallada</strong>
+                    <span>180g · Meditación & Paz</span>
+                  </div>
+                  <span class="opt-tag">Zen</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Scent Selection -->
+            <div class="step-group">
+              <div class="step-title">
+                <span class="step-number">2</span>
+                <div>
+                  <h3>Elige la Fragancia Exclusiva</h3>
+                  <small>Aceites esenciales premium que perfuman en frío y caliente</small>
+                </div>
+              </div>
+              <div class="scents-pills" id="scentOptions">
+                <button type="button" class="scent-pill active" data-scent="Vainilla Bourbon & Caramelo" data-glow="#f59e0b" data-family="Dulce / Cálido">
+                  <span class="scent-dot" style="background: #f59e0b;"></span>
+                  <span>Vainilla Bourbon & Caramelo</span>
+                </button>
+                <button type="button" class="scent-pill" data-scent="Lavanda Silvestre & Eucalipto" data-glow="#8b5cf6" data-family="Relajante / Floral">
+                  <span class="scent-dot" style="background: #a78bfa;"></span>
+                  <span>Lavanda Silvestre & Eucalipto</span>
+                </button>
+                <button type="button" class="scent-pill" data-scent="Canela Especiada & Naranja" data-glow="#ea580c" data-family="Especiado / Festivo">
+                  <span class="scent-dot" style="background: #ea580c;"></span>
+                  <span>Canela Dulce & Naranja</span>
+                </button>
+                <button type="button" class="scent-pill" data-scent="Jazmín de Medianoche & Sándalo" data-glow="#10b981" data-family="Amaderado / Místico">
+                  <span class="scent-dot" style="background: #10b981;"></span>
+                  <span>Jazmín Blanco & Sándalo</span>
+                </button>
+                <button type="button" class="scent-pill" data-scent="Café Tostado & Avellana Dulce" data-glow="#78350f" data-family="Gourmand / Hogar">
+                  <span class="scent-dot" style="background: #92400e;"></span>
+                  <span>Café Tostado & Avellana</span>
+                </button>
+                <button type="button" class="scent-pill" data-scent="Brisa Marina & Té Blanco" data-glow="#06b6d4" data-family="Fresco / Limpio">
+                  <span class="scent-dot" style="background: #06b6d4;"></span>
+                  <span>Brisa Marina & Té Blanco</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Custom Text / Label -->
+            <div class="step-group">
+              <div class="step-title">
+                <span class="step-number">3</span>
+                <div>
+                  <h3>Personaliza la Etiqueta</h3>
+                  <small>Tu nombre, un mensaje de amor o fecha inolvidable</small>
+                </div>
+              </div>
+              <div class="input-field-group">
+                <label for="customLabelInput">Texto principal en la vela:</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-pen-nib"></i>
+                  <input type="text" id="customLabelInput" maxlength="35" placeholder="Ej: Para Sofía · Feliz Cumpleaños" value="Mi Rincón de Paz">
+                </div>
+                <small class="field-hint">Máx. 35 caracteres. Se imprimirá con tinta dorada o negra artesanal.</small>
+              </div>
+
+              <!-- Quick Inspiration Chips -->
+              <div class="inspiration-chips">
+                <span>Sugerencias:</span>
+                <button type="button" class="chip-btn" data-text="Paz en este hogar">Paz en este hogar</button>
+                <button type="button" class="chip-btn" data-text="Respira, todo está bien">Respira, todo está bien</button>
+                <button type="button" class="chip-btn" data-text="Para: Mi Persona Favorita">Para: Mi Persona Favorita</button>
+                <button type="button" class="chip-btn" data-text="Nuestro Amor · 2026">Nuestro Amor · 2026</button>
+              </div>
+            </div>
+
+            <!-- Step 4: Packaging / Gift Box -->
+            <div class="step-group">
+              <div class="step-title">
+                <span class="step-number">4</span>
+                <div>
+                  <h3>Empaque de Entrega & Regalo</h3>
+                  <small>Haz que abrir el paquete sea una sorpresa inolvidable</small>
+                </div>
+              </div>
+              <div class="packaging-grid" id="packagingOptions">
+                <label class="pkg-card active">
+                  <input type="radio" name="packaging" value="kraft" data-cost="0" checked>
+                  <div class="pkg-box">
+                    <i class="fa-solid fa-box-open"></i>
+                    <strong>Caja Kraft Eco</strong>
+                    <span>Flores secas + Lazo yute</span>
+                    <span class="pkg-price">Incluido Gratis</span>
+                  </div>
+                </label>
+
+                <label class="pkg-card">
+                  <input type="radio" name="packaging" value="lujo" data-cost="12000">
+                  <div class="pkg-box">
+                    <i class="fa-solid fa-gift"></i>
+                    <strong>Caja Rígida de Lujo</strong>
+                    <span>Lazo de terciopelo + Cerillas largas</span>
+                    <span class="pkg-price">+ $12.000 COP</span>
+                  </div>
+                </label>
+
+                <label class="pkg-card">
+                  <input type="radio" name="packaging" value="bolsa" data-cost="6000">
+                  <div class="pkg-box">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <strong>Bolsa de Lino & Lacre</strong>
+                    <span>Sello de cera dorado + Tarjeta</span>
+                    <span class="pkg-price">+ $6.000 COP</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Action Buttons for Customizer -->
+            <div class="customizer-actions">
+              <button class="btn btn-primary btn-block btn-lg" id="addCustomToCartBtn">
+                <i class="fa-solid fa-cart-plus"></i> Agregar Vela Diseñada al Carrito
+              </button>
+              
+              <button class="btn btn-whatsapp btn-block" id="orderCustomWhatsAppBtn">
+                <i class="fa-brands fa-whatsapp"></i> Pedir Inmediato por WhatsApp
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Catalog Section -->
+  <section class="catalog-section" id="catalogo">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Nuestras Creaciones</span>
+        <h2 class="section-title">Catálogo de Velas & Colecciones</h2>
+        <p class="section-desc">
+          Explora nuestros modelos listos para entrega o inspírate para tu pedido por volumen (bodas, recuerdos, empresas).
+        </p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="catalog-filters">
+        <button class="filter-btn active" data-filter="all">Todas las Velas</button>
+        <button class="filter-btn" data-filter="aromaticas">Aromáticas en Vaso</button>
+        <button class="filter-btn" data-filter="esculturas">Escultóricas & Formas</button>
+        <button class="filter-btn" data-filter="packs">Kits de Regalo</button>
+        <button class="filter-btn" data-filter="eventos">Recuerdos para Eventos</button>
+      </div>
+
+      <!-- Product Grid (Populated via JS) -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Products will load dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Aromatherapy & Scent Pyramid Guide -->
+  <section class="scents-guide-section" id="aromas">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">El Arte de la Perfumería Botánica</span>
+        <h2 class="section-title">Pirámide Olfativa & Beneficios</h2>
+        <p class="section-desc">
+          Nuestras fragancias están diseñadas con aceites aromáticos de grado cosmético que estimulan el bienestar emocional.
+        </p>
+      </div>
+
+      <div class="aroma-cards-grid">
+        <div class="aroma-card">
+          <div class="aroma-icon-circle" style="background: rgba(245, 158, 11, 0.15); color: #d97706;">
+            <i class="fa-solid fa-cookie-bite"></i>
+          </div>
+          <h3>Vainilla & Especias Cálidas</h3>
+          <p class="aroma-intent"><strong>Efecto:</strong> Confort, calidez hogareña y reducción de la ansiedad.</p>
+          <div class="pyramid-notes">
+            <span class="note-item"><i class="fa-solid fa-leaf"></i> <em>Salida:</em> Mantequilla dulce</span>
+            <span class="note-item"><i class="fa-solid fa-heart"></i> <em>Corazón:</em> Vainilla Bourbon & Caramelo</span>
+            <span class="note-item"><i class="fa-solid fa-tree"></i> <em>Fondo:</em> Haba Tonka & Ámbar</span>
+          </div>
+        </div>
+
+        <div class="aroma-card">
+          <div class="aroma-icon-circle" style="background: rgba(139, 92, 246, 0.15); color: #8b5cf6;">
+            <i class="fa-solid fa-moon"></i>
+          </div>
+          <h3>Lavanda Silvestre & Eucalipto</h3>
+          <p class="aroma-intent"><strong>Efecto:</strong> Sueño reparador, relajación profunda y claridad mental.</p>
+          <div class="pyramid-notes">
+            <span class="note-item"><i class="fa-solid fa-leaf"></i> <em>Salida:</em> Eucalipto mentolado</span>
+            <span class="note-item"><i class="fa-solid fa-heart"></i> <em>Corazón:</em> Flor de Lavanda Francesa</span>
+            <span class="note-item"><i class="fa-solid fa-tree"></i> <em>Fondo:</em> Madera de Cedro suave</span>
+          </div>
+        </div>
+
+        <div class="aroma-card">
+          <div class="aroma-icon-circle" style="background: rgba(234, 88, 12, 0.15); color: #ea580c;">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+          <h3>Canela Dulce & Cáscara de Naranja</h3>
+          <p class="aroma-intent"><strong>Efecto:</strong> Vitalidad, alegría, estímulo de creatividad y unión.</p>
+          <div class="pyramid-notes">
+            <span class="note-item"><i class="fa-solid fa-leaf"></i> <em>Salida:</em> Naranja dulce confitada</span>
+            <span class="note-item"><i class="fa-solid fa-heart"></i> <em>Corazón:</em> Rama de Canela & Clavo</span>
+            <span class="note-item"><i class="fa-solid fa-tree"></i> <em>Fondo:</em> Nuez Moscada & Vainilla</span>
+          </div>
+        </div>
+
+        <div class="aroma-card">
+          <div class="aroma-icon-circle" style="background: rgba(16, 185, 129, 0.15); color: #059669;">
+            <i class="fa-solid fa-spa"></i>
+          </div>
+          <h3>Jazmín Blanco & Sándalo</h3>
+          <p class="aroma-intent"><strong>Efecto:</strong> Romance, armonía espiritual y meditación nocturna.</p>
+          <div class="pyramid-notes">
+            <span class="note-item"><i class="fa-solid fa-leaf"></i> <em>Salida:</em> Bergamota fresca</span>
+            <span class="note-item"><i class="fa-solid fa-heart"></i> <em>Corazón:</em> Pétalos de Jazmín & Loto</span>
+            <span class="note-item"><i class="fa-solid fa-tree"></i> <em>Fondo:</em> Sándalo oriental & Almizcle</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packaging Experience Section -->
+  <section class="packaging-section" id="empaques">
+    <div class="container">
+      <div class="packaging-highlight-box">
+        <div class="pkg-highlight-content">
+          <span class="section-subtitle">El Desempaque Perfecto</span>
+          <h2>Cada Detalle Cuenta: Diseñados para Cautivar</h2>
+          <p>
+            Sabemos que una vela personalizada es un regalo memorable. Por eso, cuidamos cada elemento: papel de seda ecológico, ramillete de flores secas cosechadas éticamente, cerillas de madera de mango extralargas y sellado con cera de lacre grabado a mano.
+          </p>
+
+          <div class="pkg-checklist">
+            <div class="check-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Cajas reforzadas a prueba de envíos nacionales</span>
+            </div>
+            <div class="check-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Tarjetas de dedicatoria escritas en caligrafía</span>
+            </div>
+            <div class="check-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Guía de cuidados para máxima duración de la vela</span>
+            </div>
+          </div>
+
+          <a href="#personalizador" class="btn btn-primary" style="margin-top: 1.5rem;">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Elige tu empaque ahora
+          </a>
+        </div>
+
+        <div class="pkg-highlight-image">
+          <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80" alt="Cajas de regalo con lazo elegante">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us / Quality Pillars -->
+  <section class="pillars-section" id="nosotros">
+    <div class="container">
+      <div class="pillars-grid">
+        <div class="pillar-box">
+          <div class="pillar-num">01</div>
+          <h3>100% Cera de Soja Pura</h3>
+          <p>Libre de parafina y derivados del petróleo. Quema limpia, uniforme y con una duración hasta un 50% superior.</p>
+        </div>
+        <div class="pillar-box">
+          <div class="pillar-num">02</div>
+          <h3>Mechas Eco de Algodón o Madera</h3>
+          <p>Mechas libres de plomo y mechas crepitantes de madera que emulan el acogedor sonido de una chimenea encendida.</p>
+        </div>
+        <div class="pillar-box">
+          <div class="pillar-num">03</div>
+          <h3>Personalización Artesanal</h3>
+          <p>Cada vela se vierte y decora a mano por artesanos. No hay dos piezas idénticas en nuestro atelier.</p>
+        </div>
+        <div class="pillar-box">
+          <div class="pillar-num">04</div>
+          <h3>Recipientes Reutilizables</h3>
+          <p>Una vez terminada tu vela, limpia el envase con agua tibia y jabón para usarlo como maceta, portalápices o joyero.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonials -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Experiencias Reales</span>
+        <h2 class="section-title">Lo Que Dicen Quienes Ya Encendieron su Aura</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Pedí una vela con el aroma de Vainilla Bourbon y personalizada con el nombre de mi hermana para su cumpleaños. El olor inunda toda la sala incluso apagada. El empaque parecía de una joyería de lujo."</p>
+          <div class="reviewer">
+            <strong>Camila Restrepo</strong>
+            <span>Bogotá, Colombia</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Mandamos a hacer 40 velitas en forma de flor de loto para los recuerdos del bautizo de mi hija. Todos los invitados quedaron fascinados. Excelente atención por WhatsApp y puntualidad insuperable."</p>
+          <div class="reviewer">
+            <strong>Mateo & Andrea</strong>
+            <span>Medellín, Colombia</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"La mecha de madera que cruje es una maravilla para mis tardes de lectura y teletrabajo. Se nota la calidad de la cera vegetal que no saca humo negro. 100% recomendados."</p>
+          <div class="reviewer">
+            <strong>Valeria Mendoza</strong>
+            <span>Cali, Colombia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Custom Wholesale Orders Section -->
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-info">
+          <span class="section-subtitle">¿Eventos o Regalos Corporativos?</span>
+          <h2>Hablemos de tu Proyecto Especial</h2>
+          <p>
+            Hacemos pedidos personalizados por mayor para bodas, baby showers, aniversarios de marcas y regalos empresariales con tarifas especiales y etiquetas brandeadas.
+          </p>
+
+          <div class="contact-details">
+            <div class="c-detail">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <strong>WhatsApp Directo</strong>
+                <span>+57 300 000 0000 (Atención rápida)</span>
+              </div>
+            </div>
+            <div class="c-detail">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Correo Electrónico</strong>
+                <span>contacto@auraycera.com</span>
+              </div>
+            </div>
+            <div class="c-detail">
+              <i class="fa-brands fa-instagram"></i>
+              <div>
+                <strong>Instagram</strong>
+                <span>@auraycera_velas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form id="contactForm" class="contact-form">
+            <h3>Envíanos un Mensaje</h3>
+            <div class="form-group">
+              <label>Tu Nombre</label>
+              <input type="text" id="contactName" placeholder="Ej: Diana Gómez" required>
+            </div>
+            <div class="form-group">
+              <label>WhatsApp / Celular</label>
+              <input type="tel" id="contactPhone" placeholder="Ej: 310 123 4567" required>
+            </div>
+            <div class="form-group">
+              <label>¿Qué tipo de vela o evento necesitas?</label>
+              <textarea id="contactMsg" rows="3" placeholder="Ej: Necesito 25 velas personalizadas con aroma a jazmín para matrimonio en noviembre..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-paper-plane"></i> Enviar Consulta por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <div class="flame-icon">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">AURA & CERA</span>
+            <span class="brand-sub">ATELIER BOTÁNICO</span>
+          </div>
+        </div>
+        <p>Velas artesanales 100% de cera de soja formuladas con esencias prémium para elevar tu hogar y tus momentos.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="#catalogo">Catálogo Completo</a></li>
+          <li><a href="#personalizador">Diseñador Interactivo</a></li>
+          <li><a href="#aromas">Guía de Aromaterapia</a></li>
+          <li><a href="#empaques">Opciones de Empaque</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ocasiones</h4>
+        <ul>
+          <li><a href="#catalogo">Regalos de Cumpleaños</a></li>
+          <li><a href="#contacto">Recuerdos para Bodas</a></li>
+          <li><a href="#catalogo">Kits de Relajación & Spa</a></li>
+          <li><a href="#contacto">Regalos Corporativos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Garantía & Envíos</h4>
+        <p class="footer-info"><i class="fa-solid fa-truck-fast"></i> Envíos nacionales protegidos contra roturas.</p>
+        <p class="footer-info"><i class="fa-solid fa-shield-heart"></i> Satisfacción aromática 100% garantizada.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-inner">
+        <p>© 2026 Aura & Cera Atelier. Todos los derechos reservados.</p>
+        <p>Listo para publicar gratis en <strong>GitHub Pages</strong> ✨</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-in Shopping Cart Drawer -->
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <div class="cart-title">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>Tu Carrito de Velas</h3>
+      </div>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Cerrar carrito">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-items-container" id="cartItemsContainer">
+      <!-- Cart items injected via JS -->
+      <div class="empty-cart-state" id="emptyCartState">
+        <i class="fa-solid fa-fire-burner"></i>
+        <h4>Tu carrito está vacío</h4>
+        <p>Explora nuestras velas o personaliza una a tu gusto para comenzar.</p>
+        <a href="#personalizador" class="btn btn-sm btn-primary close-cart-link">Diseñar Vela</a>
+      </div>
+    </div>
+
+    <div class="cart-drawer-footer" id="cartFooter">
+      <div class="cart-subtotal">
+        <span>Total del Pedido:</span>
+        <strong id="cartSubtotalAmount">$0 COP</strong>
+      </div>
+      <p class="shipping-note"><i class="fa-solid fa-truck"></i> Envío calculado al coordinar por WhatsApp</p>
+      <button class="btn btn-whatsapp btn-block" id="checkoutWhatsAppBtn">
+        <i class="fa-brands fa-whatsapp"></i> Finalizar Pedido por WhatsApp
+      </button>
+      <button class="btn btn-link btn-block" id="clearCartBtn">Vaciar Carrito</button>
+    </div>
+  </aside>
+
+  <!-- Quick Floating WhatsApp Floating Button -->
+  <a href="https://wa.me/573000000000?text=Hola%20Aura%20%26%20Cera,%20deseo%20informaci%C3%B3n%20sobre%20sus%20velas%20personalizadas" 
+     class="floating-whatsapp-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="tooltip-wa">¿Dudas? Chatea con nosotras</span>
+  </a>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
