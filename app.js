@@ -9,7 +9,7 @@
 const CONFIG = {
   // Escribe aquí tu número con código de país (Ejemplo Colombia: 573001234567, México: 521..., etc.)
   WHATSAPP_PHONE: "573000000000",
-  STORE_NAME: "Aura & Cera Atelier",
+  STORE_NAME: "Nalu Candle",
   CURRENCY: "COP",
   CURRENCY_SYMBOL: "$"
 };
