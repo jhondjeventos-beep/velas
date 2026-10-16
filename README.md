@@ -1,5 +1,5 @@
 [README.md](https://github.com/user-attachments/files/33579869/README.md)
-# 🕯️ Aura & Cera - Tienda Web de Velas Artesanales & Personalizadas
+# 🕯️ Nalu Candle - Tienda Web de Velas Artesanales & Personalizadas
 
 Una página web moderna, atractiva, elegante y lista para publicar gratis en **GitHub Pages**. Diseñada con una paleta cálida y cautivadora (tonos ámbar dorado, terracota, cera de soja natural y detalles botánicos) pensada para enamorar a los visitantes e impulsar tus ventas.
 
